@@ -1,0 +1,36 @@
+Transport Data Analysis Project
+Overview
+This project analyzes vehicle and fuel efficiency data as part of the ASC23 system-based track on transport. The analysis provides valuable insights into transport patterns and fuel consumption trends that will inform AI model development.
+Repository Contents
+Notebook
+
+transport_analysis_notebook.ipynb - Python notebook containing the complete data analysis workflow
+
+Visualizations
+
+histograms.png - Distribution analysis of key vehicle metrics
+correlation_heatmap.png - Heat map showing relationships between features
+pair_plot.png - Matrix of pairwise relationships between variables
+boxplots.png - Analysis of data distribution and outliers
+
+Key Features
+
+Comprehensive data preprocessing and cleaning
+Statistical analysis of vehicle and fuel efficiency metrics
+Advanced visualizations using matplotlib and seaborn
+Detailed interpretation of findings for AI applications
+
+Technologies Used
+
+Python 3.x
+pandas & NumPy for data manipulation
+Matplotlib & Seaborn for visualization
+
+How to Run
+
+Install required dependencies: pip install pandas numpy matplotlib seaborn scipy
+Make sure the dataset file fuel_econ - fuel_econ.csv is in the same directory
+Run the notebook cells sequentially to reproduce the analysis
+
+Results
+The analysis reveals important patterns in vehicle fuel efficiency that will be valuable for future AI modeling. Key findings include correlation patterns between vehicle attributes and fuel consumption, distribution characteristics of efficiency metrics, and identification of potential outliers.
