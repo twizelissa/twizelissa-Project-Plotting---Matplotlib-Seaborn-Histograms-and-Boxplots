@@ -1,36 +1,58 @@
-Transport Data Analysis Project
-Overview
-This project analyzes vehicle and fuel efficiency data as part of the ASC23 system-based track on transport. The analysis provides valuable insights into transport patterns and fuel consumption trends that will inform AI model development.
-Repository Contents
-Notebook
+# Fuel Efficiency Analysis with Matplotlib and Seaborn
 
-transport_analysis_notebook.ipynb - Python notebook containing the complete data analysis workflow
+## 📌 Project Overview
 
-Visualizations
+This notebook is a visualization-based analysis of a fuel economy dataset, focused on exploring relationships between different vehicle attributes like engine size, fuel type, and emissions. The aim is to prepare the data for future AI applications by extracting meaningful visual insights.
 
-histograms.png - Distribution analysis of key vehicle metrics
-correlation_heatmap.png - Heat map showing relationships between features
-pair_plot.png - Matrix of pairwise relationships between variables
-boxplots.png - Analysis of data distribution and outliers
+The project is part of the **ASC23 assignment on Transport Systems**, specifically analyzing vehicles and fuel efficiency.
 
-Key Features
+---
 
-Comprehensive data preprocessing and cleaning
-Statistical analysis of vehicle and fuel efficiency metrics
-Advanced visualizations using matplotlib and seaborn
-Detailed interpretation of findings for AI applications
+## 🔍 What’s Included
 
-Technologies Used
+- ✅ Data import using Pandas
+- ✅ Displayed a sample (first 8 rows) of the dataset
+- ✅ Plotted a **Histogram** showing fuel efficiency distribution
+- ✅ Created a **Heatmap** showing correlation between numeric features
+- ✅ Each diagram is accompanied by **interpretation comments**
+- ✅ Exported diagrams as PNG files (`histogram.png`, `heatmap.png`)
+- ✅ Source notebook with all code and visible outputs
 
-Python 3.x
-pandas & NumPy for data manipulation
-Matplotlib & Seaborn for visualization
+---
 
-How to Run
+## 🧪 Libraries Used
 
-Install required dependencies: pip install pandas numpy matplotlib seaborn scipy
-Make sure the dataset file fuel_econ - fuel_econ.csv is in the same directory
-Run the notebook cells sequentially to reproduce the analysis
+- `pandas`  
+- `matplotlib`  
+- `seaborn`  
+- `numpy`  
 
-Results
-The analysis reveals important patterns in vehicle fuel efficiency that will be valuable for future AI modeling. Key findings include correlation patterns between vehicle attributes and fuel consumption, distribution characteristics of efficiency metrics, and identification of potential outliers.
+---
+
+## 📊 Diagram Interpretations
+
+### 🔹 Histogram: Fuel Efficiency (mpg)
+Shows the distribution of miles per gallon. Most vehicles cluster around average efficiency. Few vehicles are extremely fuel-efficient or inefficient.
+
+### 🔹 Heatmap: Correlation Matrix
+Highlights relationships between numeric features. Strong correlations help identify redundant or unimportant columns, e.g.:
+- `UCity` and `city` are highly correlated.
+- If a column has a correlation ~1 or ~0 with others, it might be a candidate for removal.
+
+---
+
+## 📁 Files Included
+
+- `fuel_econ - fuel_econ.csv` — dataset
+- `fuel_analysis.ipynb` — Jupyter/Colab notebook with full analysis
+- `histogram.png` — histogram export
+- `heatmap.png` — heatmap export
+
+---
+
+## 🚀 How to Run
+
+You can view and run this notebook in [Google Colab](https://colab.research.google.com/) or clone this repo and run it locally with:
+
+```bash
+pip install pandas seaborn matplotlib numpy
